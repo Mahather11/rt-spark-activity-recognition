@@ -40,18 +40,19 @@ The Android Emulator successfully fetches the latest prediction from the Flask A
 
 ### 2. Mobile App: Activity History
 The app fulfills the requirement to display the history of records stored in the cloud database.
-*(Insert Screenshot 2 here: The Android Emulator showing the scrolling list of "Activity History")*
 <img width="568" height="843" alt="image" src="https://github.com/user-attachments/assets/bc0f074b-7ca5-4263-94e9-287ef48e4551" />
 
 
 ### 3. Device Firmware & UART Bridge
 The STM32 board generates synthetic sensor data, formats it as JSON, and transmits it over UART. The Python bridge script reads this data and publishes it to Mosquitto.
-<img width="1907" height="912" alt="image" src="https://github.com/user-attachments/assets/91d3d389-ed3b-4d70-9ef1-60cc0f108c49" />
+<img width="1547" height="911" alt="image" src="https://github.com/user-attachments/assets/6ce80cc3-0ccf-40c5-b039-e75cd296a945" />
+
 
 
 ### 4. Cloud Backend & Machine Learning
 The Flask Web API serves the data, while the MQTT Listener receives the JSON payload and classifies it using our trained Random Forest model.
-<img width="1907" height="1010" alt="image" src="https://github.com/user-attachments/assets/856e1dc8-1dfe-4558-95fa-df441a332e72" />
+<img width="1554" height="1010" alt="image" src="https://github.com/user-attachments/assets/8738087a-afc0-401b-aacd-e4b99b1277ab" />
+
 
 ---
 
